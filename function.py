@@ -1,6 +1,6 @@
 import file_operation
 import Notepad
-import ui
+import UI
 
 number = 3  # сколько знаков МИНИМУМ может быть в тексте заметки
 
