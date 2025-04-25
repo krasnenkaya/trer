@@ -6,7 +6,7 @@ number = 3  # сколько знаков МИНИМУМ может быть в 
 
 
 def add():
-    note = ui.create_note(number)
+    note = UI.create_note(number)
     array = file_operation.read_file()
     for notes in array:
         if Notepad.Note.get_id(note) == Notepad.Note.get_id(notes):
@@ -44,7 +44,7 @@ def id_edit_del_show(text):
         if id == Notepad.Note.get_id(notes):
             logic = False
             if text == 'edit':
-                note = ui.create_note(number)
+                note = UI.create_note(number)
                 Notepad.Note.set_title(notes, note.get_title())
                 Notepad.Note.set_body(notes, note.get_body())
                 Notepad.Note.set_date(notes)
