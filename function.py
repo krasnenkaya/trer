@@ -33,7 +33,7 @@ def show(text):
             if date in Notepad.Note.get_date(notes):
                 print(Notepad.Note.map_note(notes))
     if logic == True:
-        print('Нет ни одной заметки...')
+        print('Нет заметок...')
 
 
 def id_edit_del_show(text):
